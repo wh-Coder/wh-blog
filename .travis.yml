@@ -12,6 +12,6 @@ deploy:
     branch: master
   local_dir: dist
   repo: wh-Coder/wh-blog
-  target_branch: ci
+  target_branch: gh-pages
   email: deploy@travis-ci.org
   name: deployment-bot
