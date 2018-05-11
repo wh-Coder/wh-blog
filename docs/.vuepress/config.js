@@ -1,9 +1,11 @@
 module.exports = {
-    title: 'Hello VuePress',
+    base: '/wh-blog',
+    title: 'wh',
     dest: 'dist',
-    description: 'Just playing around',
+    description: 'just blog',
     themeConfig: {
         lastUpdated: 'Last Updated', // string | boolean
+        repo: 'wh-Coder/wh-blog',
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' },
