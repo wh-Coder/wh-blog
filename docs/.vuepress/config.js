@@ -21,6 +21,7 @@ module.exports = {
         sidebar: {
             '/blog/': [
                 '',
+                'flex',
                 'a',
                 'b',
                 ['c', '这里是C']

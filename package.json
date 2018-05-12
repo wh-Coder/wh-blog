@@ -11,5 +11,9 @@
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "vuepress": "^0.8.4"
+  },
+  "dependencies": {
+    "element-ui": "^2.3.8",
+    "vue": "^2.5.16"
   }
 }
