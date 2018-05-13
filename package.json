@@ -10,7 +10,9 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "vuepress": "^0.8.4"
+    "vuepress": "^0.8.4",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
   },
   "dependencies": {
     "element-ui": "^2.3.8",
