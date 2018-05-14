@@ -17,5 +17,8 @@
   "dependencies": {
     "element-ui": "^2.3.8",
     "vue": "^2.5.16"
+  },
+  "info": {
+    "node-sass error": "yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass"
   }
 }
