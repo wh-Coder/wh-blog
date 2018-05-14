@@ -1,6 +1,8 @@
-# 基于 vuepress 搭建的静态博客 [wh-blog](https://wh-Coder.github.io/wh-blog/)
+---
+home: true
+heroImage: /qb.jpg
+actionText: blog →
+actionLink: /blog/
+---
 
-```js
-const hello = 'hello'
-console.log(hello)
-```
+<!-- # 基于 vuepress 搭建的静态博客 [wh-blog](https://wh-Coder.github.io/wh-blog/) -->

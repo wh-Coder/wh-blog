@@ -9,14 +9,14 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' },
-            { text: 'External', link: 'https://google.com' },
-            {
-                text: 'Languages',
-                items: [
-                    { text: 'Chinese', link: '/language/chinese' },
-                    { text: 'Japanese', link: '/language/japanese' }
-                ]
-            }
+            // { text: 'External', link: 'https://google.com' },
+            // {
+            //     text: 'Languages',
+            //     items: [
+            //         { text: 'Chinese', link: '/language/chinese' },
+            //         { text: 'Japanese', link: '/language/japanese' }
+            //     ]
+            // }
         ],
         sidebar: {
             '/blog/': [
