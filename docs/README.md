@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /qb.jpg
+heroImage: /qb.png
 actionText: blog →
 actionLink: /blog/
 ---

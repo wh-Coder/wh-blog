@@ -1,5 +1,8 @@
 module.exports = {
     base: '/wh-blog/',
+    head: [
+        ['link', { rel: 'icon', href: `/qb.png` }]
+    ],
     title: 'wh',
     dest: 'dist',
     description: 'just blog',
@@ -21,7 +24,7 @@ module.exports = {
         sidebar: {
             '/blog/': [
                 '',
-                'flex',
+                ['flex', 'flex'],
                 'a',
                 'b',
                 ['c', '这里是C']
