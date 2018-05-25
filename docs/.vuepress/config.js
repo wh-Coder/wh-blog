@@ -25,7 +25,6 @@ module.exports = {
             '/blog/': [
                 '',
                 ['flex', 'flex'],
-                'a',
                 'b',
                 ['c', '这里是C']
             ]

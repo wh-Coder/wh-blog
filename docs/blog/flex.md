@@ -42,8 +42,6 @@ content：px | auto
 
 百分比：相对于父容器 | auto
 
-<flex-item />
-
 ## 参考
 
 [30 分钟学会 Flex 布局](https://zhuanlan.zhihu.com/p/25303493)
