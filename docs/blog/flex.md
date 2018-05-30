@@ -13,8 +13,6 @@
 
 缩写：flex-flow: flex-direction flex-wrap
 
-<flex-container />
-
 ## 子项属性
 
 | 属性 | order | flex-grow | flex-shrink | flex-basis | align-self |
@@ -41,6 +39,10 @@ auto：主尺寸 | content
 content：px | auto
 
 百分比：相对于父容器 | auto
+
+## DEMO
+
+<flex-demo />
 
 ## 参考
 

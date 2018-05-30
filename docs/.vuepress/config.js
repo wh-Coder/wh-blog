@@ -12,6 +12,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' },
+            { text: 'MiWifi', link: '/miwifi/' },
             // { text: 'External', link: 'https://google.com' },
             // {
             //     text: 'Languages',
@@ -23,10 +24,11 @@ module.exports = {
         ],
         sidebar: {
             '/blog/': [
-                '',
-                ['flex', 'flex'],
-                'b',
-                ['c', '这里是C']
+                ['flex', 'Flex'],
+                'd'
+            ],
+            '/miwifi/': [
+                ['frp', 'Frp']
             ]
         }
     }

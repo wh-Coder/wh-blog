@@ -77,7 +77,7 @@ const itemStyleInit = {
     alignSelf: 'auto'
 }
 export default {
-    name: 'flex-container',
+    name: 'flex-demo',
     data() {
         return {
             dialogVisible: false,
