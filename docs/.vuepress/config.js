@@ -28,7 +28,8 @@ module.exports = {
                 'd'
             ],
             '/miwifi/': [
-                ['frp', 'Frp']
+                ['frp', 'frp'],
+                ['ssr', 'ssr']
             ]
         }
     }
