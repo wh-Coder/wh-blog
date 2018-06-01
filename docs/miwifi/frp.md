@@ -14,6 +14,12 @@
 
 - 配置 frpc.ini 执行 ```./frpc -c ./frpc.ini```
 
+- 后台运行
+
+    - screen command
+
+    - nohup command &
+
 ## 参考
 
 [frp官方](https://github.com/fatedier/frp)
