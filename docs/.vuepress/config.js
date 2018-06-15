@@ -13,6 +13,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' },
             { text: 'MiWifi', link: '/miwifi/' },
+            { text: 'Reading', link: '/reading/' }
             // { text: 'External', link: 'https://google.com' },
             // {
             //     text: 'Languages',
@@ -30,6 +31,9 @@ module.exports = {
             '/miwifi/': [
                 ['frp', 'frp'],
                 ['ssr', 'ssr']
+            ],
+            '/reading/': [
+                ['css-world', 'CSS世界']
             ]
         }
     }
