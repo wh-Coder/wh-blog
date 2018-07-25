@@ -90,31 +90,65 @@ export default {
 
 <style lang="stylus">
 .bfc
-    .float-item
+    .float-box
         float: left
         display: inline-block
         width: 50px
         height: 20px
         background-color: red
-    .bfc-item
-        overflow: hidden
+    .bfc-box
+        overflow-x: hidden
+        overflow-y: visible /* 多余 */
         /* display: table-cell
         width: 9999px */
+        position: relative
+        .outer-box
+            position: absolute
+            top: -10px
+            right: 0
+            width: 30px
+            height: 30px
+            background-color: rgba(0, 255, 0, .4)
     .word-break
         display: table
         width: 100%
         table-layout: fixed
         word-break: break-all
+    
 </style>
 
 <template>
 <div class="bfc">
-    <span class="float-item">float</span>
-    <div class="bfc-item">
+    <span class="float-box">float</span>
+    <div class="bfc-box">
         <div class="word-break">
             这个 DEMO 还附带了一个 word-break 的样式类来解决英文过长不能自动换行的的问题
             sadfasdfasdfasdgadsfgkjadfkgjdofngofdngodfingaodfingodfingodfngodfi
         </div>
+        <div class="outer-box"></div>
     </div>
 </div>
 </template>
+
+## 6.4 overflow
+
+- overflow 剪裁界线 border box，即如果容器有padding，会被当做容器内的对象一样剪裁掉
+
+- overflow: auto，有个兼容问题：chrome下，滚动容器的padding-bottom会算在滚动尺寸内
+
+- 除非 overflow-x 和 overflow-y 的属性值都是 visible，否则 visible 会当成 auto 来 解析。
+
+- 单行文字溢出点点点效果
+
+    ```
+    .ell {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    ```
+- 返回顶部：```<a href="#">返回顶部></a>```
+
+- 元素设置了 overflow: hidden 声明，里面内容高度溢出的时候，滚 动依然存在，仅仅滚动条不存在!
+
+- *6.4.5 ?*
