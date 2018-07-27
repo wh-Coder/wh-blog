@@ -97,18 +97,22 @@ export default {
         height: 20px
         background-color: red
     .bfc-box
-        overflow-x: hidden
-        overflow-y: visible /* 多余 */
-        /* display: table-cell
-        width: 9999px */
+        /* overflow-x: hidden
+        overflow-y: visible  */
+        /* 上面一行多余 */
+        display: table-cell
+        width: 9999px
         position: relative
+        /* transform: translate3d(0, 0, 0) */
         .outer-box
             position: absolute
-            top: -10px
-            right: 0
+            /* z-index: 999 */
+            /* top: -10px */
+            /* right: 0 */
             width: 30px
             height: 30px
             background-color: rgba(0, 255, 0, .4)
+            display: inline
     .word-break
         display: table
         width: 100%
@@ -152,3 +156,75 @@ export default {
 - 元素设置了 overflow: hidden 声明，里面内容高度溢出的时候，滚 动依然存在，仅仅滚动条不存在!
 
 - *6.4.5 ?*
+
+## 11.1 outline
+
+- 模拟原生的按钮，代理高亮
+
+    ```css
+    :focus + label.btn {
+       outline: 1px dotted Highlight;
+       /* Chrome浏览器下使用浏 览器自带的 focus 外发光 outline 效果 */
+       outline: 5px auto -webkit-focus-ring-color;
+    }
+    ```
+
+    *demo:*
+
+<style lang="stylus">
+.11-11-demo
+    [type="submit"] {
+        position: absolute;
+        clip: rect(0 0 0 0);
+    }
+    .btn {
+        display: inline-block;
+        padding: 2px 12px;
+        background-color: #cd0000;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    :focus + label.btn {
+       outline: 1px dotted Highlight;
+       /* Chrome浏览器下使用浏 览器自带的 focus 外发光 outline 效果 */
+       outline: 5px auto -webkit-focus-ring-color;
+    }
+</style>
+
+<template>
+<div class="11-11-demo">
+    <input class="outline"></input>
+    <input id="t" type="submit">
+    <label class="btn" for="t">提交</label>
+</div>
+</template>
+
+- outline: 一个真正意义上的不占据任何空间的属性
+    
+    - 遮罩效果
+
+    ```css
+    .crop-area {
+        outline: 256px solid #000;
+        outline: 256px solid rgba(0,0,0,.5);
+        /*包括 IE10 在内的 IE 浏览器下的镂空 元素会有点击穿透的问题 ↓2*/
+        background: url(about:blank);
+        background: linear-gradient(to top, transparent, transparent);
+        /* IE8 浏览器不支持 rgba 颜色 */
+        filter: alpha(opacity=50);   
+        cursor: move;
+    }
+    :root .crop-area {
+        filter: none;
+    }
+    ```
+
+    - 剪裁配合
+
+    ```css
+    {
+        position: absolute;
+        clip: rect(0 9999px 9999px 0);
+    }
+    ```
