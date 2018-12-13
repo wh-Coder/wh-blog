@@ -26,7 +26,7 @@ module.exports = {
         sidebar: {
             '/blog/': [
                 ['flex', 'Flex'],
-                'd'
+                ['array', 'Array数组方法一览']
             ],
             '/miwifi/': [
                 ['frp', 'frp'],
