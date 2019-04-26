@@ -5,6 +5,16 @@
 ## 步骤
 
 - 查看服务器语言环境：```locale```
+    出现：
+    ```
+    LANG=
+    LANGUAGE=
+    LC_CTYPE="POSIX"
+    LC_NUMERIC="POSIX"
+    LC_TIME="POSIX"
+    ...
+    ```
+    执行 `export LANG=en_US.UTF-8` 改变语言。再次输入 `locale`
 
     出现类似下面的报错：
     ```
